@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Washing Machines</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Floor</th>
+      <th>Dorm</th>
+      <th>State</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @washing_machines.each do |washing_machine| %>
+      <tr>
+        <td><%= washing_machine.floor %></td>
+        <td><%= washing_machine.dorm %></td>
+        <td><%= washing_machine.state %></td>
+        <td><%= link_to 'Show', washing_machine %></td>
+        <td><%= link_to 'Edit', edit_washing_machine_path(washing_machine) %></td>
+        <td><%= link_to 'Destroy', washing_machine, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Washing machine', new_washing_machine_path %>

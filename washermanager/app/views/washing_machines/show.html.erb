@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Floor:</strong>
+  <%= @washing_machine.floor %>
+</p>
+
+<p>
+  <strong>Dorm:</strong>
+  <%= @washing_machine.dorm %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @washing_machine.state %>
+</p>
+
+<%= link_to 'Edit', edit_washing_machine_path(@washing_machine) %> |
+<%= link_to 'Back', washing_machines_path %>

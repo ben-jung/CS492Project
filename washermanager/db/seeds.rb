@@ -5,3 +5,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+(1..5).each do |i|
+  WashingMachine.create(state:"idle",dorm:"sejong",floor:i)
+  WashingMachine.create(state:"idle",dorm:"sejong",floor:i)
+end
