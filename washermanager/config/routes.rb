@@ -9,6 +9,11 @@ Rails.application.routes.draw do
   root 'main#index'
 
   get 'get_all', to: 'main#get_all'
+  get 'get_data', to: 'main#get_data'
+  get 'recommend', to: 'main#recommend'
+  get 'tracking', to: 'main#tracking'
+  get 'set_token', to: 'main#set_token'
+  get 'make_mac_floor' , to: 'main#make_mac_floor'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

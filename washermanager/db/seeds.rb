@@ -8,5 +8,8 @@
 
 (1..5).each do |i|
   WashingMachine.create(state:"idle",dorm:"sejong",floor:i)
-  WashingMachine.create(state:"idle",dorm:"sejong",floor:i)
 end
+
+
+#sample
+MacFloor.create(mac_address:"d8:c7:c8:df:01:d1",floor:3)

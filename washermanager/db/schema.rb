@@ -11,7 +11,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151103051817) do
+ActiveRecord::Schema.define(version: 20151202084711) do
+
+  create_table "mac_floors", force: :cascade do |t|
+    t.string   "mac_address", limit: 255
+    t.integer  "floor",       limit: 4
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
+  end
+
+  create_table "tokens", force: :cascade do |t|
+    t.string   "value",      limit: 255
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+  end
+
+  create_table "trackings", force: :cascade do |t|
+    t.integer  "machine_id", limit: 4
+    t.string   "APNS_token", limit: 255
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+  end
 
   create_table "washing_machines", force: :cascade do |t|
     t.integer  "floor",      limit: 4

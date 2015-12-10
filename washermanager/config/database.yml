@@ -18,7 +18,8 @@ development:
   <<: *default
   encoding: utf8
   database: wm_development
-  socket: /tmp/mysql.sock
+#  socket: /tmp/mysql.sock
+  socket: /var/run/mysqld/mysqld.sock
 
 
 # Warning: The database defined as "test" will be erased and
