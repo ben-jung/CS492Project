@@ -1,10 +1,10 @@
-== README
+# README
 
 This is server part of CS492C project.
 
 * Rails version : 4.2.4
 
- Installation 
+## Installation 
 At first, you should install the bundle w/ `bundle install` 
 And then,
 ```
